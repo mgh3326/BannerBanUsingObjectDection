@@ -79,7 +79,7 @@ def handle(msg):
 
 if __name__ == "__main__":
     print("Start")
-    with open('secret.json') as f:
+    with open('./config/secret.json') as f:
         data = json.load(f)
     db = DBConnect(data["mongodb"])
     print("DB Connect OK")
